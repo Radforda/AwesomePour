@@ -33,7 +33,7 @@ const drinkSeed = [
         ],
         directions: "dry shake, shake with ice, fine strain, ice cubes, lemon twist, cherry",
         image: "./images/amaretto-sour.jpg",
-        favorite: "yes",
+        favorite: "no",
         category: "bourbon"
     },
     {
@@ -687,7 +687,7 @@ const drinkSeed = [
         ],
         directions: "Fill a highball glass with ice. Add the Apple-Ginger Syrup and soda; stir. Garnish with the apple slices.",
         image: "./images/FujiAppleSoda.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic" 
 
     },
@@ -748,7 +748,7 @@ const drinkSeed = [
         ],
         directions: "In a cocktail shaker, muddle the 8 raspberries. Add ice and the lemon juice, rose water and Simple Syrup and shake well. Strain into an ice-filled highball glass. Stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
         image: "./images/RaspberryFizz.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic"               
     },
     {
