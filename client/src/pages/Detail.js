@@ -11,7 +11,7 @@ let index=0;
 class Drinks extends Component {
     
     state = {
-        drinkinfo: "nothing yet!",
+        drinkinfo: "",
         zero: 268371,
         weightReading: 0,
         weight:" Not Connected",
@@ -23,7 +23,7 @@ class Drinks extends Component {
         progress: 0,
         activeIngrIndex: 0,
         buttonText:"Start",
-        displayString: "1. Click 'Connect To Scale' to connect the scale. \n 2. Place cup on scale. \n 3. Click the 'Zero Scale' button above. \n 4. Click the 'Start' button below to begin."
+        displayString: "1. Turn on scale \n 2. Click 'Connect To Scale' above."
         
     }
 
@@ -39,7 +39,7 @@ class Drinks extends Component {
         
     }
 
-    updateFavDrink = id => {
+    updateFavoriteDrink = id => {
         API.updateFavDrink(id)
             .then(res => console.log("added"))
             .catch(err => console.log(err));
@@ -55,7 +55,7 @@ class Drinks extends Component {
                    
                 <div className='drinkinfo col-md-4'>
                     <img src={this.state.drinkinfo.image && this.state.drinkinfo.image.slice(1)} /> 
-                    <FavBtn onClick={() => this.updateFavDrink(this.state.drinkinfo._id)} />
+                    <FavBtn onClick={() => this.updateFavoriteDrink(this.state.drinkinfo._id)} />
                         <h1>{this.state.drinkinfo.title}</h1>
                         {this.state.drinkinfo.ingredients && this.state.drinkinfo.ingredients.map(ingredient =>(
                             <h2>{ingredient}</h2>
@@ -138,6 +138,7 @@ class Drinks extends Component {
     connect=()=>{
         console.log('Requesting Bluetooth Device...');
         this.setState({weight: "Connecting..."});
+        this.setState({displayString:" 1. Place cup on scale. \n 3. Click the 'Zero Scale' button above. \n 4. Click the 'Start' button below to begin."})
         navigator.bluetooth.requestDevice(
         {filters: [{services: ['battery_service','1bc50001-0200-0aa5-e311-24cb004a98c5']}]})
         .then(device => {

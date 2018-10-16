@@ -60,11 +60,19 @@ class SearchBar extends Component {
                     onChange={this.handleInputChange}
                 />
 
-                <button className='btn btn-lg btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
+            <button className='btn btn-primary' onClick={this.navigateToDetailPage}>Search By Name</button>
 
-                <Modals />
-                <Favorites />
+            <Modals />
+            <div className="nav">
+                <a href="#gin"><button className='btn btn-warning'>Gin Drinks</button></a>
+                <a href="#rum"><button className='btn btn-warning'>Rum Drinks</button></a>
+                <a href="#bourbon"><button className='btn btn-warning'>Bourbon Drinks</button></a>
+                <a href="#champagne"><button className='btn btn-warning'>Champagne Drinks</button></a>
+                <a href="#misc"><button className='btn btn-warning'>Misc Drinks</button></a>
+                <a href='#nonalco'><button className='btn btn-warning'>Non-Alcoholic Drinks</button></a>
+                <a href="#vodka"><button className='btn btn-warning'>Vodka Drinks</button></a>
             </div>
+        </div>
         );
     }
 

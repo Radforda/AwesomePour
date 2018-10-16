@@ -57,7 +57,7 @@ class Modals extends Component {
         event.preventDefault();
             API.saveDrink({
                 title: this.state.title.toUpperCase(),
-                ingredients: this.state.ingredients.split(','),
+                ingredients: this.state.ingredients.split(', '),
                 directions: this.state.directions,
                 category: this.state.category
             })
@@ -69,7 +69,7 @@ class Modals extends Component {
     render() {
         return (
             <div>
-                <button className ='btn btn-lg btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
+                <button className ='btn btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}

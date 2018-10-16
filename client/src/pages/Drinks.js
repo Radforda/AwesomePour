@@ -11,6 +11,8 @@ import Champagne from "../Components/champagne"
 import Misc from "../Components/misc"
 import Nonalcoholic from "../Components/nonalcoholic"
 import DemoCarousel from '../Components/Slider'
+import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
+
 
 
 class Drinks extends Component {
@@ -38,28 +40,31 @@ class Drinks extends Component {
         return (
             <div className='container'>
 
-                    {/* <div>
-                        <Favorites />
-                    </div> */}
                     <SearchBar />
-                    <p>-----------------------------------------------------------------</p> 
-                <div className='main'>
+                    <div className='caroRow container'>
                     <DemoCarousel />
-                    <div className='row'>
-                        <Gin />
-                    </div>
-                    
+                </div>
+
+                <div className='main'>
+
+
+                    <div>
+                <ScrollUpButton />
+            </div>
+                    <Favorites />
+                    <Gin />
+
                     <Rum />
                     <Vodka />
                     <Bourbon />
                     <Champagne />
                     <Misc />
                     <Nonalcoholic />
-                    </div>
                 </div>
-            )
-        }
+            </div>
+        )
     }
+}
 
 
 export default Drinks;

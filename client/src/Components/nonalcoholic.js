@@ -22,7 +22,7 @@ class Nonalcoholic extends Component {
     render() {
         return (
             <div>
-                <div className='container drink_div'>
+                <div className='container drink_div' id='nonalco'>
                     <p className="favLabel">Non-Alcoholic Drinks</p>
                         <div className='row'>
 

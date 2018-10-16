@@ -143,10 +143,15 @@ a:hover {
   /* border-bottom: blue 7px solid */
   box-shadow: 2px 2px 4px #3d3d3d;
 }
+.picsDiv{
+  width:650px;
+  margin:auto;
+}
 
 .display-str {
   white-space: pre-wrap;
   text-align: left;
+  padding-bottom:20px;
 }
 
 .progress {
@@ -161,5 +166,33 @@ a:hover {
 }
 
 /* .favorites {
-  /* background-color:rgba(224, 127, 0, 0.1) */
+  /* background-color:rgba(224, 127, 0, 0.1) 
+}*/
+
+ 
+
+.caroRow {
+  width: 700px;
+}
+
+.nav{
+  width: 100%;
+  text-align: center;
+  height: 100px;
+
+}
+
+.nav a{
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  margin:auto;
+}
+
+.hide{
+  display: none;
+}
+
+.pourInfo > * {
+  margin: 15px;
+}
 

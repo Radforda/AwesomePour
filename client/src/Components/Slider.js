@@ -32,7 +32,7 @@ class DemoCarousel extends Component {
                 <Link to={"/detail/" + drink._id}>   
                     <div key={index}>
                         <img src={drink.image} style={{ height: '600px' }} />
-                        <p className="legend">{drink.name}</p>
+                        <p className="legend" style={{fontSize:'2em'}}>{drink.title}</p>
                     </div>
                     </Link>
                     

@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactdrinklist"
+  "mongodb://localhost/reactdrinklist"||"mongodb://localhost/reactdrinklist"||'mongodb://Codecamp:Skip123!@ds129003.mlab.com:29003/heroku_8fb4vpwf'
 );
 
 
@@ -743,10 +743,9 @@ const drinkSeed = [
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
-            "2 oz. chilled club soda",
-            "1 Lemon wheel, for garnish"                    
+            "2 oz. chilled club soda"                   
         ],
-        directions: "Mixed until the drink turns pink.",
+        directions: "Mix until pink ",
         image: "./images/RaspberryFizz.jpg",
         favorite: "yes",
         category: "non-alcoholic"               
@@ -799,7 +798,7 @@ const drinkSeed = [
         ingredients: [
             "2 oz Apple Juice",
             "1 oz Lime Juice",
-            ".75oz Simple Syrup (1:1);",
+            ".75 oz Simple Syrup (1:1);",
             "2 Lime Twists",
             ".5 oz Club Soda",
             "Large Handful Of Mint"

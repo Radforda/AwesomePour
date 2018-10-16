@@ -12,11 +12,11 @@ export default {
 
     updateFavDrink: function(id) {
       console.log(id)
-      return axios.put("api/drinks/" + id).then(response => console.log("update"))
+      return axios.put("/api/drinks/" + id)
     },
 
     updateFavDrinkOff: function(id) {
-      return axios.put("api/favorites/" + id)
+      return axios.put("/api/favorites/" + id)
     },
 
     ginDrinks: function() {

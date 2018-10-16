@@ -44,18 +44,18 @@ class Favorites extends Component {
 
     render() {
         return (
-            <div >
-                <div>
+            <div>
+                <div className='container'>
                     <p className="favLabel">Favorites</p>
                 </div>
-                <div className='favorites' >
+                <div className='favorites row'>
                 {this.state.favDrinks.map(favDrink => (
                 
 
-                <div className='drink_image'>
+                <div className='drink_image col-md-4'>
                     <Link to={"/detail/" + favDrink._id}>   
                         <img src = {favDrink.image} ></img>
-                        <span>{favDrink.title}</span>
+                        <p>{favDrink.title}</p>
                     </Link>
                     <DeleteBtn onClick={() => this.updateFavDrinkOff(favDrink._id)} />
                </div>
