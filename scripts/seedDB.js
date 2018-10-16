@@ -33,7 +33,7 @@ const drinkSeed = [
         ],
         directions: "dry shake, shake with ice, fine strain, ice cubes, lemon twist, cherry",
         image: "./images/amaretto-sour.jpg",
-        favorite: "yes",
+        favorite: "no",
         category: "bourbon"
     },
     {
@@ -739,16 +739,16 @@ const drinkSeed = [
     {
         title: "Raspberry Fizz",
         ingredients: [
-            "8 Raspberries, plus 3 Rasberries skewered on a pick for garnish",
+            "Muddled Raspberries, plus 3 Rasberries skewered on a pick for garnish",
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
             "2 oz. chilled club soda",
             "1 Lemon wheel, for garnish"                    
         ],
-        directions: "In a cocktail shaker, muddle the 8 raspberries. Add ice and the lemon juice, rose water and Simple Syrup and shake well. Strain into an ice-filled highball glass. Stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
+        directions: "Add muddled raspberries. Add ice, stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
         image: "./images/RaspberryFizz.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic"               
     },
     {
