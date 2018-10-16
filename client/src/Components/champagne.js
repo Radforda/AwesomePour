@@ -22,7 +22,7 @@ class Champagne extends Component {
     render() {
         return (
             <div>
-                <div className='container drink_div'>
+                <div className='container drink_div' id="champagne">
                     <p className="favLabel">Champagne Drinks</p>
                     <div className='row'>
 
@@ -32,7 +32,7 @@ class Champagne extends Component {
 
                                 <Link to={"/detail/" + champagneDrink._id}>
                                     <img src={champagneDrink.image} ></img>
-                                    <span>{champagneDrink.title}</span>
+                                    <p>{champagneDrink.title}</p>
                                 </Link>
                             </div>
 

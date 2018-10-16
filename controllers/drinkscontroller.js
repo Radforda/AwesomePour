@@ -20,10 +20,18 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
+    console.log("im in the update")
     db.Drink
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+    .findById(req.params.id, function(err, drink) {
+      if (err) res.send(err);
+      drink.favorite = "yes";
+      drink.save(function(err) {
+        if (err)
+            res.send(err);
+
+        res.json({ message: 'Drink updated!' });
+    });
+    });
   },
   remove: function(req, res) {
     db.Drink

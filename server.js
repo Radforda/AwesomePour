@@ -1,4 +1,4 @@
-const express = require("express");
+ const express = require("express");
 // const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes");
@@ -14,8 +14,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactdrinklist");
-
+mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/reactdrinklist");
 // Add routes, both API and view
 app.use(routes);
 

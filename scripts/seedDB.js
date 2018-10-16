@@ -5,13 +5,13 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactdrinklist"
+  "mongodb://localhost/reactdrinklist"||"mongodb://localhost/reactdrinklist"||'mongodb://Codecamp:Skip123!@ds129003.mlab.com:29003/heroku_8fb4vpwf'
 );
 
 
 const drinkSeed = [
     {
-        title: "Airmail",
+        title: "AIRMAIL",
         ingredients: [
             "1 oz white rum",
             ".5 oz fresh lime",
@@ -23,7 +23,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        title: "Amaretto Sour",
+        title: "AMARETTO SOUR",
         ingredients: [
             "1.5 oz Disaronno",
             ".75 oz. Overproof Bourbon",
@@ -37,7 +37,7 @@ const drinkSeed = [
         category: "bourbon"
     },
     {
-        title: "American Highball",
+        title: "AMERICAN HIGHBALL",
         ingredients: [
             "1.5 oz. Italian Rosso Vermouth",
             "1.5 oz. Campari"
@@ -48,7 +48,7 @@ const drinkSeed = [
         category: "whiskey"
     },
     {
-        title: "Aperol Spritz",
+        title: "APEROL SPRITZ",
         ingredients: [
             "2 oz. Aperol",
             "2 oz. Chilled club soda",
@@ -60,7 +60,7 @@ const drinkSeed = [
         category: "champagne"
     },
     {
-        title: "Arsenic and old lace",
+        title: "ARSENIC AND OLD LACE",
         ingredients: [
             "2 oz. London Dry Gin",
             ".75 oz. Dry Vermouth",
@@ -72,7 +72,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Aviation",
+        title: "AVIATION",
         ingredients: [
             "2 oz. Plymouth Gin",
             ".75 oz. Fresh Lemon",
@@ -85,7 +85,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Bee's Knees",
+        title: "BEE'S KNEES",
         ingredients: [
             "2 oz. Plymouth Gin",
             ".75 oz. Fresh Lemon",
@@ -97,7 +97,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Bellini",
+        title: "BELLINI",
         ingredients: [
             ".4 oz. Crème de Peche",
             "1 oz. Peach Nectar (Kearn’s)"
@@ -108,7 +108,7 @@ const drinkSeed = [
         category: "champagne"
     }, 
     {
-        title: "Bijou",
+        title: "BIJOU",
         ingredients: [
             "1.5 oz. Plymouth Gin",
             "1 oz. Italian Rosso Vermouth",
@@ -121,7 +121,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Black Russian",
+        title: "BLACK RUSSIAN",
         ingredients: [
             "2 oz. Vodka",
             ".75 oz. Kahlua"
@@ -132,7 +132,7 @@ const drinkSeed = [
         category: "vodka"
     },
     {
-        title: "Bloody Mary",
+        title: "BLOODY MARY",
         ingredients: [
             "2 oz. Vodka",
             ".75 oz. Fresh Lemon",
@@ -148,7 +148,7 @@ const drinkSeed = [
         category: "vodka"
     },
     {
-        title: "Boulevardier",
+        title: "BOULEVARDIER",
         ingredients: [
             "1.5 oz. Bourbon",
             ".75 oz. Campari",
@@ -160,7 +160,7 @@ const drinkSeed = [
         category: "bourbon"
     },
     {
-        title: "Bramble",
+        title: "BRAMBLE",
         ingredients: [
             "1.5 oz. Overproof Gin",
             ".75 oz. Fresh Lemon",
@@ -172,7 +172,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Brandy Alexander",
+        title: "BRANDY ALEXANDER",
         ingredients: [
             "1 oz. Cognac",
             "1 oz. Dark Crème de Cacao",
@@ -184,7 +184,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        title: "Brooklynite",
+        title: "BROOKLYNITE",
         ingredients: [
             "2 oz. Aged Jamaican Rum",
             ".75 oz. Fresh Lime",
@@ -197,7 +197,7 @@ const drinkSeed = [
         category: "rum"
     }, 
     {
-        title: "Caipirina",
+        title: "CAIPIRINA",
         ingredients: [
             "2 oz. Cachaca",
             ".5 oz. Simple Syrup (1:1)",
@@ -210,7 +210,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        title: "Champagne Cocktail",
+        title: "CHAMPAGNE COCKTAIL",
         ingredients: [
             "Sugar cube",
             "3 dashes Angostura bitters"
@@ -221,7 +221,7 @@ const drinkSeed = [
         category: "champagne"
     },
     {
-        title: "Chartreuse Swizzle",
+        title: "CHARTREUSE SWIZZLE",
         ingredients: [
             "1.25 oz. Green Chartreuse",
             ".5 oz. Falernum",
@@ -234,7 +234,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        title: "Chrysanthemum",
+        title: "CHRYSANTHEMUM",
         ingredients: [
             "2 oz. Dry Vermouth",
             ".75 oz. Benedictine",
@@ -246,7 +246,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        title: "Clover Club",
+        title: "CLOVER CLUB",
         ingredients: [
             "1.5 oz. London Dry Gin",
             ".5 oz. Dry Vermouth",
@@ -261,7 +261,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Corn 'n Oil",
+        title: "CORN 'N OIL",
         ingredients: [
             "2 oz. Blackstrap Rum",
             ".25 oz. Falernum",
@@ -274,7 +274,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        title: "Daiquiri",
+        title: "DAIQUIRI",
         ingredients: [
             "2 oz. White Rum",
             "1 oz. Fresh Lime",
@@ -286,7 +286,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        title: "Eastside",
+        title: "EASTSIDE",
         ingredients: [
             "2 oz. London Dry Gin",
             ".75 oz. Fresh Lemon",
@@ -300,7 +300,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "French 75",
+        title: "FRENCH 75",
         ingredients: [
             "1 oz. London Dry Gin",
             ".5 oz. Fresh Lemon",
@@ -312,7 +312,7 @@ const drinkSeed = [
         category: "gin"
     }, 
     {
-        title: "Gimlet",
+        title: "GIMLET",
         ingredients: [
             "2 oz. London Dry Gin",
             "1 oz. Fresh Lime",
@@ -325,7 +325,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Gin Rickey",
+        title: "GIN RICKEY",
         ingredients: [
             "1.5 oz. London Dry Gin",
             ".75 oz. Fresh Lime",
@@ -337,7 +337,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Godfather/Godmother",
+        title: "GODFATHER/GODMOTHER",
         ingredients: [
             "2 oz. Blended Scotch (J&B/Famous Grouse)",
             ".5 oz. DiSaronno"
@@ -348,7 +348,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        title: "Grasshopper",
+        title: "GRASSHOPPER",
         ingredients: [
             "1 oz. White Crème de Cacao",
             "1 oz. Green Crème de Menthe",
@@ -361,7 +361,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        title: "Hanky Panky",
+        title: "HANKY PANKY",
         ingredients: [
             "1.5 oz. London Dry Gin",
             "1.5 oz. Italian Rosso Vermouth",
@@ -373,7 +373,7 @@ const drinkSeed = [
         category: "gin"
     },
     {
-        title: "Hemingway Daiquiri",
+        title: "HEMINGWAY DAIQUIRI",
         ingredients: [
             "2 oz. White Rum",
             ".75 oz. Fresh Lime",
@@ -388,7 +388,7 @@ const drinkSeed = [
         category: "rum"
     },
     {
-        title: "Hot Toddy",
+        title: "HOT TODDY",
         ingredients: [
             "2 oz. Bourbon",
             "3.5 oz. Black Tea",
@@ -402,7 +402,7 @@ const drinkSeed = [
         category: "bourbon"
     },
     {
-        title: "Irish Coffee",
+        title: "IRISH COFFEE",
         ingredients: [
             "2.5 oz. Water",
             "2 oz. Irish Whiskey",
@@ -415,7 +415,7 @@ const drinkSeed = [
         category: "whiskey"
     },
     {
-        title: "Japanese Cocktail",
+        title: "JAPANESE COCKTAIL",
         ingredients: [
             "2.5 oz. Cognac",
             ".5 oz. Orgeat",
@@ -427,7 +427,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        title: "Kir",
+        title: "KIR",
         ingredients: [
             ".5 oz. Crème de Cassis",
             "Dry White Wine"                    
@@ -438,7 +438,7 @@ const drinkSeed = [
         category: "misc"
     },
     {
-        title: "Kir Royale",
+        title: "KIR ROYALE",
         ingredients: [
             ".5 oz. Crème de Framboise",
             "Champagne"                    
@@ -449,7 +449,7 @@ const drinkSeed = [
         category: "champagne"        
     },
     {
-        title: "Last Word",
+        title: "LAST WORD",
         ingredients: [
             ".75 oz. London Dry Gin",
             ".75 oz. Luxardo Maraschino Liqueur",
@@ -462,7 +462,7 @@ const drinkSeed = [
         category: "gin"       
     },
     {
-        title: "Long Island Iced Tea",
+        title: "LONG ISLAND ICED TEA",
         ingredients: [
             ".5 oz. Vodka",
             ".5 oz. Blanco Tequila",
@@ -477,7 +477,7 @@ const drinkSeed = [
         category: "vodka"       
     },
     {
-        title: "Mai Tai",
+        title: "MAI TAI",
         ingredients: [
             "1 oz. Aged Jamaican Rum",
             "1 oz. Agricole Blanc",
@@ -492,7 +492,7 @@ const drinkSeed = [
         category: "rum"       
     },
     {
-        title: "Manhattan",
+        title: "MANHATTAN",
         ingredients: [
             "2.5 oz. Bourbon OR Rye whiskey",
             "1 oz. Italian Rosso Vermouth",
@@ -504,7 +504,7 @@ const drinkSeed = [
         category: "bourbon"       
     },
     {
-        title: "Margarita",
+        title: "MARGARITA",
         ingredients: [
             "2 oz. Blanco Tequila",
             ".75 oz. Cointreau (Combier is better if you have it)",
@@ -517,7 +517,7 @@ const drinkSeed = [
         category: "misc"               
     },
     {
-        title: "Martinez",
+        title: "MARTINEZ",
         ingredients: [
             "2 oz. Old Tom Gin",
             "1 oz. Italian Rosso Vermouth",
@@ -531,7 +531,7 @@ const drinkSeed = [
         category: "gin"               
     },
     {
-        title: "Mimosa",
+        title: "MIMOSA",
         ingredients: [
             "1⁄2 Champagne",
             "1⁄2 Orange Juice"
@@ -542,7 +542,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        title: "Mint Julep",
+        title: "MINT JULEP",
         ingredients: [
             "2.25 oz. Bourbon",
             ".5 oz. Demerara Syrup (1:1)",
@@ -554,7 +554,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "Mojito",
+        title: "MOJITO",
         ingredients: [
             "2 oz. White Rum",
             "1 oz. Fresh Lime",
@@ -568,7 +568,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        title: "Moscow Mule (and ALL Mules)",
+        title: "MOSCOW MULE (AND ALL MULES)",
         ingredients: [
             "2 oz. Vodka (or other base)",
             "1 oz. Fresh Lime",
@@ -581,7 +581,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "Negroni",
+        title: "NEGRONI",
         ingredients: [
             "1.5 oz. London Dry Gin",
             "1 oz. Italian Rosso Vermouth",
@@ -593,7 +593,7 @@ const drinkSeed = [
         category: "gin"               
     },
     {
-        title: "Old Cuban",
+        title: "OLD CUBAN",
         ingredients: [
             "2 oz. Aged Rum",
             ".5 oz. Demerara Syrup (1:1)",
@@ -607,7 +607,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        title: "Old Fashioned",
+        title: "OLD FASHIONED",
         ingredients: [
             "2.5 oz. Bourbon OR Rye",
             ".5 oz. Demerara Syrup (1:1)",
@@ -620,7 +620,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "Old Maid aka London Maid",
+        title: "OLD MAID AKA LONDON MAID",
         ingredients: [
             "2 oz. London Dry Gin",
             ".75 oz. Fresh Lemon",
@@ -634,7 +634,7 @@ const drinkSeed = [
         category: "gin"               
     },
     {
-        title: "Paloma",
+        title: "PALOMA",
         ingredients: [
             "1.5 oz. Blanco Tequila",
             ".5 oz. Mezcal",
@@ -648,7 +648,7 @@ const drinkSeed = [
         category: "misc"               
     },
     {
-        title: "Wise Guy",
+        title: "WISE GUY",
         ingredients: [
             "4 sage leaves, plus 1 sprig for garnish",
             ".25 oz. Jalapeno Agave Syrup",
@@ -664,7 +664,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        title: "Tuscan Fresco",
+        title: "TUSCAN FRESCO",
         ingredients: [
             "2 rosemary sprigs",
             "1 oz. peach nectar",
@@ -679,20 +679,20 @@ const drinkSeed = [
         category: "non-alcoholic"      
     },
     {
-        title: "Fuji Apple Soda",
+        title: "FUJI APPLE SODA",
         ingredients: [
             "2 oz. Apple-Ginger Syrup",
             "3 oz. chilled club soda",
             "2 apple slices"                               
         ],
-        directions: "Fill a highball glass with ice. Add the Apple-Ginger Syrup and soda; stir. Garnish with the apple slices.",
+        directions: "Stir.",
         image: "./images/FujiAppleSoda.jpg",
-        favorite: "no",
+        favorite: "yes",
         category: "non-alcoholic" 
 
     },
     {
-        title: "Strawberrry & Ginger Cooler",
+        title: "STRAWBERRY AND GINGER COOLER",
         ingredients: [
             "2 large Strawberries, sliced, plus 1 Strawberry half",
             "1/2-inch piece of fresh ginger, chopped",
@@ -707,7 +707,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        title: "Lilikoi",
+        title: "LILIKOI",
         ingredients: [
             "2 oz. Mango-Lilikoi Puree",
             "1 oz. Passion fruit nectar or juice",
@@ -722,7 +722,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        title: "Rocking Orange",
+        title: "ROCKING ORANGE",
         ingredients: [
             "2 oz. Fresh Orange Juice",
             "2 oz. Fresh Mandarin Orange juice",
@@ -737,22 +737,29 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        title: "Raspberry Fizz",
+        title: "RASPBERRY FIZZ",
         ingredients: [
+<<<<<<< HEAD
             "Muddled Raspberries, plus 3 Rasberries skewered on a pick for garnish",
+=======
+            "1 scoop of muddled Raspberries",
+>>>>>>> master
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
-            "2 oz. chilled club soda",
-            "1 Lemon wheel, for garnish"                    
+            "2 oz. chilled club soda"                   
         ],
+<<<<<<< HEAD
         directions: "Add muddled raspberries. Add ice, stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
+=======
+        directions: "Mix until pink ",
+>>>>>>> master
         image: "./images/RaspberryFizz.jpg",
         favorite: "yes",
         category: "non-alcoholic"               
     },
     {
-        title: "Lady Lavender's Mocktail",
+        title: "LADY LAVENDER'S MOCKTAIL",
         ingredients: [
             "3 oz. Fresh Grapefruit juice",
             ".75 oz. Lavender Syrup",
@@ -767,7 +774,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        title: "Sophisticated Lady",
+        title: "SOPHISTICATED LADY",
         ingredients: [
             "1 unpeeled cucumber wheel, plus 1 peeled cucumber spear",
             "1 oz. Simple Syrup",
@@ -781,7 +788,7 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        title: "Almond-Fennel Cooler",
+        title: "ALMOND-FENNEL COOLER",
         ingredients: [
             ".75 oz. Orgeat (almond-flavored syrup)",
             ".75 oz. Fennel Syrup",
@@ -795,7 +802,35 @@ const drinkSeed = [
         category: "non-alcoholic"               
     },
     {
-        title: "The Lamborn",
+        title: "VIRGIN MOJITO",
+        ingredients: [
+            "2 oz Apple Juice",
+            "1 oz Lime Juice",
+            ".75 oz Simple Syrup (1:1);",
+            "2 Lime Twists",
+            ".5 oz Club Soda",
+            "Large Handful Of Mint"
+        ],
+        directions: "Gently Muddle. Garnish with mint sprig.",
+        image: "./images/Virgin-Mojito.jpg",
+        favorite: "yes",
+        category: "non-alcoholic"
+    },
+    {
+        title: "ARABIAN SUN",
+        ingredients: [
+            "5 oz Orange Juice",
+            "1 oz Lemonade",
+            "1 oz Grendine"
+        ],
+        directions: "Stir lightly.",
+        image:"./images/Arabian-Sun.jpg",
+        favorite: "yes",
+        category: "non-alcoholic"
+
+    },
+    {
+        title: "THE LAMBORN",
         ingredients: [
             "2 oz. Mount Gay Silver rum",
             "2 oz. snap pea juice",
@@ -808,7 +843,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        title: "Walking Far From Home",
+        title: "WALKING FAR FROM HOME",
         ingredients: [
             "2 oz. Plantation White Rum",
             "1.5 oz. red currant puree",
@@ -823,7 +858,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        title: "Summer Moon",
+        title: "SUMMER MOON",
         ingredients: [
             "2 oz. Barcardi Silver rum",
             "1 oz. fresh Lime juice",
@@ -838,7 +873,7 @@ const drinkSeed = [
         category: "rum"               
     },
     {
-        title: "Old Glory",
+        title: "OLD GLORY",
         ingredients: [
             "8-10 blueberries",
             "2 oz. Long Island Vodka",
@@ -852,7 +887,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "The Chelsea",
+        title: "THE CHELSEA",
         ingredients: [
             "1.7 oz. Crop Cucumber Vodka",
             "1 oz. St. Germain liqueur",
@@ -865,7 +900,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "Glass Gardens",
+        title: "GLASS GARDENS",
         ingredients: [
             "2 oz. Vodka",
             "1 oz. Fresh heirloom tomato juice",
@@ -880,7 +915,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "Pear Martini",
+        title: "PEAR MARTINI",
         ingredients: [
             "1.5 oz. vodka",
             "1 oz. Elderflower liqueur ",
@@ -893,7 +928,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "Raspberry Cosmopolitan",
+        title: "RASPBERRY COSMOPOLITAN",
         ingredients: [
             "2 oz. Vodka",
             "1 oz. Lemon juice",
@@ -907,7 +942,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "Pumpkin Spice Lebowski",
+        title: "PUMPKIN SPICE LEBOWSKI",
         ingredients: [
             "2 oz. Reyka Vodka",
             "1 oz. Coffee liqueur",
@@ -921,7 +956,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "20th Century",
+        title: "20TH CENTURY",
         ingredients: [
             "1.5 oz. Vodka",
             ".75 oz. Lemon juice",
@@ -936,7 +971,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "The Bloody Fall",
+        title: "THE BLOODY FALL",
         ingredients: [
             "2 oz. Reyka Vodka",
             "2 oz. Tomato juice",
@@ -950,7 +985,7 @@ const drinkSeed = [
         category: "vodka"               
     },
     {
-        title: "Love Letters",
+        title: "LOVE LETTERS",
         ingredients: [
             "1 oz. Bourbon",
             ".5 oz. Patron Citronge orange liqueur",
@@ -965,7 +1000,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "The Libertine",
+        title: "THE LIBERTINE",
         ingredients: [
             "2 oz. Simple syrup",
             "2 sprigs Fresh Rosemary",
@@ -982,7 +1017,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "The Optimist",
+        title: "THE OPTIMIST",
         ingredients: [
             "2 oz. Lustau Palo Cortado Sherry",
             ".5 oz. Amaro Nonino",
@@ -996,7 +1031,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "Casanova",
+        title: "CASANOVA",
         ingredients: [
             "1 oz. Elijah Craig Small Batch bourbon",
             ".25 oz. Licor 43",
@@ -1012,7 +1047,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "Spice Me Up",
+        title: "SPICE ME UP",
         ingredients: [
             "2 oz. Bourbon",
             ".5 oz. Allspice dram(such as Cotton & Reed Allspice Dram)",
@@ -1026,7 +1061,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "Autumn Leaves",
+        title: "AUTUMN LEAVES",
         ingredients: [
             "2 slices Orange",
             "3 slices Lemon",
@@ -1042,7 +1077,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "Royal Julep",
+        title: "ROYAL JULEP",
         ingredients: [
             "1 oz.Absolut Elyx Vodka",
             ".75 oz. Lemon juice",
@@ -1056,7 +1091,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        title: "Pomegranate Royale",
+        title: "POMEGRANATE ROYALE",
         ingredients: [
             "5 Pomegranate seeds",
             "1 oz. Pomegranate liqueur",
@@ -1069,7 +1104,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        title: "Apricot Fizz",
+        title: "APRICOT FIZZ",
         ingredients: [
             "1 tbsp Vodka",
             "2 oz.  Apricot nectar",
@@ -1082,7 +1117,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        title: "Galliano Fizz",
+        title: "GALLIANO FIZZ",
         ingredients: [
             "1.5 oz. Don q anejo tequila",
             ".5 oz. Galliano Yellow",
@@ -1099,7 +1134,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        title: "Imperial Spritz",
+        title: "IMPERIAL SPRITZ",
         ingredients: [
             ".75 oz. Fresh Lemon juice",
             ".75 oz. Raspberry syrup",
@@ -1115,7 +1150,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        title: "Ingrid Bergman",
+        title: "INGRID BERGMAN",
         ingredients: [
             "1 dash Grapefruit bitters",
             "1 dash absinthe",
@@ -1130,7 +1165,7 @@ const drinkSeed = [
         category: "champagne"               
     },
     {
-        title: "Cranberry Sparkle",
+        title: "CRANBERRY SPARKLE",
         ingredients: [
             "1.5 oz. Tito's Handmade Vodka",
             ".5 oz. Lime Juice",

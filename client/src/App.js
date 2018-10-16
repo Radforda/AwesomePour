@@ -20,7 +20,7 @@ class App extends Component {
       <Router>
         <div className="App container">
           <div>
-          <SearchBar />
+          {/* <SearchBar /> */}
           <br></br>
           <Route exact path="/" component={Drinks} />
           <Route exact path="/detail/:id" component={Detail} />

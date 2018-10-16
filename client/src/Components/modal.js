@@ -23,7 +23,7 @@ class Modals extends Component {
         title: "",
         ingredients: [],
         directions: "",
-        category: ""
+        category: "custom"
     };
 
     openModal() {
@@ -56,19 +56,20 @@ class Modals extends Component {
         console.log("submit");
         event.preventDefault();
             API.saveDrink({
-                title: this.state.title,
-                ingredients: this.state.ingredients.split(','),
+                title: this.state.title.toUpperCase(),
+                ingredients: this.state.ingredients.split(', '),
                 directions: this.state.directions,
                 category: this.state.category
             })
-                .then(res => this.loadDrinks())
+                .then(res => this.closeModal(), window.location.reload())
                 .catch(err => console.log(err));
     };
+    
 
     render() {
         return (
             <div>
-                <button className ='btn btn-lg btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
+                <button className ='btn btn-primary'onClick={this.openModal}>Create A Custom Drink</button>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}
@@ -78,52 +79,56 @@ class Modals extends Component {
                     contentLabel="Example Modal"
                 >
                     <h2 >Create Your Own Drink</h2>
-                    {/* <button onClick={this.closeModal}>close</button> */}
-                    
-                    <form>
+                    <form id="form">
+                        Name
                         <Input
                             value={this.state.title}
                             onChange={this.handleInputChange}
                             class="inputBox"
                             name="title"
-                            placeholder="Name of the drink"
+                            placeholder="Name of the drink (required)"
                         />
                         <br></br>
+                        
+                        {/* <select value={this.state.category} onChange={this.handleInputChange}>
+                        <option value="rum">Rum</option>
+                        <option value="bourbon">Vodka</option>
+                        <option value="vodka">Vodka</option>
+                        <option value="gin">Gin</option>
+                        <option value="champagne">Champagne</option>
+                        <option value="nonalcoholic">Non-Alcoholic</option>
+                        <option value="misc">Miscellaneous</option>
+                        </select> */}
 
-                        <Input
-                            value={this.state.category}
-                            onChange={this.handleInputChange}
-                            class="inputBox"
-                            name="category"
-                            placeholder="Category of the drink"
-                        />
-                        <br></br>
-
+                        Ingredients
                         <Input
                             value={this.state.ingredients}
                             onChange={this.handleInputChange}
                             class="inputBox"
                             name="ingredients"
-                            placeholder="Ingredients for the drink"
+                            placeholder="Ingredients for the drink (required). Separate ingredients with commas."
                         />
                         <br></br>
-
+                        Directions
                         <TextArea
                             value={this.state.directions}
                             onChange={this.handleInputChange}
                             class="inputBox2"
                             name="directions"
-                            placeholder="Directions to make the drink"
+                            placeholder="Directions to make the drink (required)"
                         />
 
                         <br></br>
 
                         <FormBtn
+                            disabled={!(this.state.title && this.state.ingredients && this.state.directions)}
                             onClick={this.handleFormSubmit}
                         >
                             Submit drink
                         </FormBtn>
                     </form>
+                    <br></br>
+                    <button onClick={this.closeModal}>close</button>
                 </Modal>
             </div>
         );

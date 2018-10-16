@@ -22,7 +22,7 @@ class Misc extends Component {
     render() {
         return (
             <div>
-                <div className='container drink_div'>
+                <div className='container drink_div' id='misc'>
                     <p className="favLabel">MISC Drinks</p>
                     <div className='row'>
 

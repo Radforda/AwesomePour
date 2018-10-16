@@ -91,7 +91,7 @@ text-shadow:2px 2px 5px #3d3d3d
 .drinkinfo {
   height: 100%;
   
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .drinkinfo img {
@@ -102,7 +102,7 @@ text-shadow:2px 2px 5px #3d3d3d
 
 .pourInfo {
   height: 100%;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .Modal {
@@ -114,9 +114,14 @@ text-shadow:2px 2px 5px #3d3d3d
   right: auto;
   /* background-color: lightslategrey; */
   border-radius: 5px;
-  height: 400px;
+  height: 580px;
   background: orange;
+  padding-top: 25px;
   
+}
+
+#form {
+  padding-top: 15px;
 }
 
 .Overlay {
@@ -138,7 +143,56 @@ a:hover {
   /* border-bottom: blue 7px solid */
   box-shadow: 2px 2px 4px #3d3d3d;
 }
+.picsDiv{
+  width:650px;
+  margin:auto;
+}
+
+.display-str {
+  white-space: pre-wrap;
+  text-align: left;
+  padding-bottom:20px;
+}
+
+.progress {
+  height: 60px;
+}
+
+
+@media (min-width: 1200px) {
+  .container{
+      max-width: 1400px;
+  }
+}
 
 /* .favorites {
-  /* background-color:rgba(224, 127, 0, 0.1) */
+  /* background-color:rgba(224, 127, 0, 0.1) 
+}*/
+
  
+
+.caroRow {
+  width: 700px;
+}
+
+.nav{
+  width: 100%;
+  text-align: center;
+  height: 100px;
+
+}
+
+.nav a{
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  margin:auto;
+}
+
+.hide{
+  display: none;
+}
+
+.pourInfo > * {
+  margin: 15px;
+}
+
