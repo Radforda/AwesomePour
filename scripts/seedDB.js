@@ -739,21 +739,13 @@ const drinkSeed = [
     {
         title: "RASPBERRY FIZZ",
         ingredients: [
-<<<<<<< HEAD
-            "Muddled Raspberries, plus 3 Rasberries skewered on a pick for garnish",
-=======
             "1 scoop of muddled Raspberries",
->>>>>>> master
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
             "2 oz. chilled club soda"                   
         ],
-<<<<<<< HEAD
-        directions: "Add muddled raspberries. Add ice, stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
-=======
         directions: "Mix until pink ",
->>>>>>> master
         image: "./images/RaspberryFizz.jpg",
         favorite: "yes",
         category: "non-alcoholic"               
