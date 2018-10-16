@@ -685,7 +685,7 @@ const drinkSeed = [
             "3 oz. chilled club soda",
             "2 apple slices"                               
         ],
-        directions: "Fill a highball glass with ice. Add the Apple-Ginger Syrup and soda; stir. Garnish with the apple slices.",
+        directions: "Stir.",
         image: "./images/FujiAppleSoda.jpg",
         favorite: "yes",
         category: "non-alcoholic" 
@@ -739,14 +739,14 @@ const drinkSeed = [
     {
         title: "RASPBERRY FIZZ",
         ingredients: [
-            "8 Raspberries, plus 3 Rasberries skewered on a pick for garnish",
+            "1 scoop of muddled Raspberries",
             "1 oz. Fresh Lemon juice",
             "1 teaspoon rose water",
             ".75 oz. Simple syrup",
             "2 oz. chilled club soda",
             "1 Lemon wheel, for garnish"                    
         ],
-        directions: "In a cocktail shaker, muddle the 8 raspberries. Add ice and the lemon juice, rose water and Simple Syrup and shake well. Strain into an ice-filled highball glass. Stir in the club soda and garnish with the skewered raspberries and the lemon wheel.",
+        directions: "Mixed until the drink turns pink.",
         image: "./images/RaspberryFizz.jpg",
         favorite: "yes",
         category: "non-alcoholic"               
@@ -816,7 +816,7 @@ const drinkSeed = [
             "1 oz Lemonade",
             "1 oz Grendine"
         ],
-        directions: "In a wine glass or cocktail glass add crushed ice before pouring in the orange juice. Top up with the the lemonade and give it a quick stir, before drizzling in the grenadine. Don't stir after the pouring in the grenadine, just let the syrup create its own unique pattern through the orange juice and lemonade.",
+        directions: "Stir lightly.",
         image:"./images/Arabian-Sun.jpg",
         favorite: "yes",
         category: "non-alcoholic"
@@ -1024,7 +1024,7 @@ const drinkSeed = [
         category: "bourbon"               
     },
     {
-        title: "CASSANOVA",
+        title: "CASANOVA",
         ingredients: [
             "1 oz. Elijah Craig Small Batch bourbon",
             ".25 oz. Licor 43",
