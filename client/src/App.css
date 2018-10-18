@@ -62,13 +62,6 @@ text-shadow:2px 2px 5px #3d3d3d
   width:200px;
 }
 
-/* .drink_div{
-  margin-bottom: 200px;
-} */
-
-/* .main{
-  background-color:rgba(224, 127, 0, 0.1)
-} */
 
 .createLabel {
   font-size: 30px;
@@ -112,7 +105,6 @@ text-shadow:2px 2px 5px #3d3d3d
   top: 10%;
   left: 25%;
   right: auto;
-  /* background-color: lightslategrey; */
   border-radius: 5px;
   height: 580px;
   background: orange;
@@ -143,7 +135,6 @@ text-shadow:2px 2px 5px #3d3d3d
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: rgb(29, 26, 26, .7) */
   
 }
 
@@ -178,11 +169,7 @@ a:hover {
   }
 }
 
-/* .favorites {
-  /* background-color:rgba(224, 127, 0, 0.1) 
-}*/
 
- 
 
 .caroRow {
   width: 700px;
@@ -207,5 +194,40 @@ a:hover {
 
 .pourInfo > * {
   margin: 15px;
+}
+.repoNav{
+  display: none;
+}
+
+@media only screen and (max-width: 770px) {
+  .caroRow {
+    display: none;
+  }
+
+  #title {
+    font-size: 2em;
+  }
+
+  .favLabel{
+    margin-top:50px;
+    font-size: 2em;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .repoNav {
+    width: 100%;
+    display: block;
+  }
+
+  .repoNav a{
+    display: inline-block;
+    border: orange solid 1px;
+    margin: 2%;
+    padding: 5px;
+    color: orange;
+  }
 }
 

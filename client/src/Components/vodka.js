@@ -28,7 +28,7 @@ class Vodka extends Component {
 
                         {this.state.vodkaDrinks.map(vodkaDrink => (
 
-                            <div className='drink_image col-sm-3'>
+                            <div className='drink_image col-lg-3 col-sm-5'>
 
                                 <Link to={"/detail/" + vodkaDrink._id}>
                                     <img src={vodkaDrink.image} ></img>

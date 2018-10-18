@@ -28,7 +28,7 @@ class Nonalcoholic extends Component {
 
                     {this.state.nonalcoholicDrinks.map(nonAlco => (
                         
-                            <div className='drink_image col-sm-3'>
+                            <div className='drink_image col-lg-3 col-sm-5'>
 
                                 <Link to={"/detail/" + nonAlco._id}>
                                     <img src={nonAlco.image} ></img>

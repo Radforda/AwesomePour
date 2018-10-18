@@ -88,6 +88,16 @@ class SearchBar extends Component {
                 <a href='#nonalco'><button className='btn btn-warning'>Non-Alcoholic Drinks</button></a>
                 <a href="#vodka"><button className='btn btn-warning'>Vodka Drinks</button></a>
             </div>
+
+            <div className='repoNav'>
+                <a href = '#gin'>Gin</a>
+                <a href = '#rum'>Rum</a>
+                <a href = '#bourbon'>Bourbon</a>
+                <a href = '#champagne'>Champagne</a>
+                <a href = '#misc'>Misc</a>
+                <a href = '#nonalco'>Non-Alcoholic</a>
+                <a href = '#vodka'>Vodka</a>
+            </div>
         </div>
         );
     }
