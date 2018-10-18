@@ -53,7 +53,6 @@ class Drinks extends Component {
             </div>
                     <Favorites />
                     <Gin />
-
                     <Rum />
                     <Vodka />
                     <Bourbon />

@@ -52,7 +52,7 @@ class Favorites extends Component {
                 {this.state.favDrinks.map(favDrink => (
                 
 
-                <div className='drink_image col-md-4'>
+                <div className='drink_image col-lg-3 col-sm-5'>
                     <Link to={"/detail/" + favDrink._id}>   
                         <img src = {favDrink.image} ></img>
                         <p>{favDrink.title}</p>
