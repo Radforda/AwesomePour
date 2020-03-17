@@ -1,4 +1,6 @@
-# AwesomePour  
+# AwesomePour 
+
+deployed to http://awesome-pour.herokuapp.com/
 
 ## About AwesomePour
 
