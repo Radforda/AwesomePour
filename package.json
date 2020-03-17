@@ -25,7 +25,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.15.4",
     "if-env": "^1.0.4",
-    "mongoose": "^5.3.0",
+    "mongoose": "^5.7.5",
     "noble": "^1.9.1",
     "pure-react-carousel": "^1.13.2",
     "react-bootstrap": "^0.32.4",
