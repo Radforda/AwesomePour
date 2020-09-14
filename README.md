@@ -2,6 +2,12 @@
 
 deployed to http://awesome-pour.herokuapp.com/
 
+Video of the Scale running with the new UI https://youtu.be/CgBpK0e9Xlo
+
+video of how the browser connects to the bluetooth scale https://youtu.be/ICG0vmjrn7k
+
+video tour of the rest of the site https://youtu.be/2QJcD8-zWSo
+
 ## About AwesomePour
 
 Cocktail Library with mixing directions which connects to a bluetooth scale to make pouring cocktails easier and more fun
